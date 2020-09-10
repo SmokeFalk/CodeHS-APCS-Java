@@ -11,6 +11,10 @@
 
 public boolean allSameLetter(String str)
 {
+    if (str.equals("") )
+    { 
+        return true;
+    }
     char c1 = str.charAt(0);
     int length = str.length();
     for(int i=1;i<length;i++)
@@ -22,4 +26,5 @@ public boolean allSameLetter(String str)
         }
     }
     return true;
+
 }
